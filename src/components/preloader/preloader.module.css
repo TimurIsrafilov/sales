@@ -1,4 +1,4 @@
-.loader {
+.preloader {
   width: 175px;
   height: 80px;
   display: block;
@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.loader::after {
+.preloader::after {
   content: '';
   left: 50%;
   bottom: 0;
@@ -23,7 +23,7 @@
   animation: fadePush 1s linear infinite;
 }
 
-.loader::before {
+.preloader::before {
   content: '';
   left: 50%;
   bottom: 30px;

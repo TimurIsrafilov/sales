@@ -36,7 +36,7 @@ export default function Offer({ salesData }: TypePriceCardsProps) {
         {recomendationText}
       </p>
       <Checkbox onClick={handleCheckboxChange} checked={checked} />
-      <Button text="купить" onClick={handleButtonClick} disabled={disabled} />
+      <Button text="КУПИТЬ" onClick={handleButtonClick} disabled={disabled} />
       <p className="font-pt-root-ui font-regular text-[14px] text-[#818798]">
         {warningText}
       </p>

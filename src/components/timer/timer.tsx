@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { useAppDispatch } from "@/hooks/hooks";
 import { setTimerStatus } from "@/services/timer/reducer";
-import { useState, useEffect } from "react";
+import "./timer.css";
 
 export default function Timer() {
   const dispatch = useAppDispatch();
@@ -25,8 +26,10 @@ export default function Timer() {
 
   return (
     <h2
-      className={`font-bebas font-regular text-[60px] leading-[0px] ${
-        seconds > 5 ? "text-[#01B9C5]" : "text-[#FD4D35]"
+      className={`${
+        seconds > 5 || seconds === 0 ? "" : "blink"
+      } font-bebas font-regular text-[60px] leading-[0px] ${
+        seconds > 5 ? "text-[#01B9C5]" : "text-[#FD4D35] "
       }`}
     >
       {minutes < 10 ? `0${minutes}` : minutes}:

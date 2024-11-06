@@ -42,7 +42,7 @@ export default function FinalPriceCard({
   return (
     <div className="container cursor-pointer" onClick={handleCardChoose}>
       <div
-        className={`h-[261px] container border-2 rounded-2xl
+        className={`h-[210px] w-[210px] container border-2 rounded-2xl
         ${
           choosenCard === id
             ? "border-[#02bac5] bg-[#e9f4f4]"
@@ -62,7 +62,7 @@ export default function FinalPriceCard({
             <p className="font-pt-root-ui font-bold text-[50px] text-[#2D3242] leading-[50px]">
               {`${replaceDigits(discountPrice)}₽`}
             </p>
-            <div className=" absolute top-[-20px] right-[-50px]">
+            <div className=" absolute top-[-20px] right-[-25px]">
               <SaleLabel discount={cardData.discount} size={50} />
             </div>
           </div>

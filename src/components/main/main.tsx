@@ -21,7 +21,7 @@ export default function Main() {
       <h2 className="font-rubik font-bold text-center text-[40px] text-[#2D3242]">
         {title.toUpperCase()}
       </h2>
-      <div className="container flex mx-auto max-w-[1098px]">
+      <div className="container flex gap-[79px] mx-auto max-w-[1098px]">
         <Image
           src={man}
           alt="man"
