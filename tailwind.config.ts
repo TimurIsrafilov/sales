@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        "pt-root-ui": ['"PT Root UI"', "sans-serif"],
+        bebas: ['"Bebas Neue"', "sans-serif"],
+        rubik: ["Rubik", "sans-serif"],
+      },
     },
   },
   plugins: [],
