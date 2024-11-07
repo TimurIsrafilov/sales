@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Приложение для отображения спец предложений компании
 
-## Getting Started
+## Описание проекта:
 
-First, run the development server:
+Web-приложение, при заходе в приложение появляется таймер и начинается обратный отсчет, указывающий на завершение акции. Дополнительно реализован всплывающий попап по спецпредложениям.
+
+## Проект размещен на ресурсе Vercel по ссылке:
+
+[https://sales-kzhm.vercel.app/](https://sales-kzhm.vercel.app/)
+
+## Команды для сборки проекта:
+
+склонировать реппозиторий
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/TimurIsrafilov/sales.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+зайти в папку проекта
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd sales
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+установить зависимости
 
-## Learn More
+```bash
+npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Команды для запуска проекта:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+запустить дев-режим
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm npm run dev
+```
 
-## Deploy on Vercel
+Открыть [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+запуск прод-режима
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
+
+## Использован стек технологий:
+
+- <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg" title="nextjs" alt="nextjs" width="20" height="20"/> - **NextJS** - фреймворк для React [https://nextjs.org/](https://nextjs.org/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="reactjs" alt="reactjs" width="20" height="20"/> - **ReactJS** - библиотека JavaScript [https://react.dev/](https://react.dev/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="redux" alt="redux" width="20" height="20"/> - **Redux** - стейт-менеджер для ReactJS [https://redux.js.org/](https://redux.js.org/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="typescript" alt="typescript" width="20" height="20"/> - **TypeScript** - система статической типизации для JS [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
+
+## Реализованный функционал:
+
+- Проект привязан к получаемой с бэкенда информации о скидках
+- Отображение первичных предложений с привязкой к таймеру
+- Отображение спецпредложений во всплывающем окне
+
+## Что можно улучшить:
+
+- Привести верстку в полное соответствие с макетом
+- Рассмотреть возможность организации работы стейт менеджера на сервере
