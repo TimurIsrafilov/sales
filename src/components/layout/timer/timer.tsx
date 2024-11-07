@@ -5,7 +5,7 @@ import "./timer.css";
 
 export default function Timer(): React.JSX.Element {
   const dispatch = useAppDispatch();
-  const [seconds, setSeconds] = useState(10);
+  const [seconds, setSeconds] = useState(120);
 
   useEffect(() => {
     if (seconds > 0) {
@@ -27,9 +27,9 @@ export default function Timer(): React.JSX.Element {
   return (
     <h2
       className={`${
-        seconds > 5 || seconds === 0 ? "" : "blink"
+        seconds > 30 || seconds === 0 ? "" : "blink"
       } font-bebas font-regular text-[60px] leading-[0px] ${
-        seconds > 5 ? "text-colr_aqua" : "text-colr_orange"
+        seconds > 30 ? "text-colr_aqua" : "text-colr_orange"
       }`}
     >
       {minutes < 10 ? `0${minutes}` : minutes}:
