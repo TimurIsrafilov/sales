@@ -29,7 +29,7 @@ export default function FinalPriceCard({
   };
 
   function replaceDigits(discountPrice: number): number {
-    let numStr = discountPrice.toString();
+    const numStr = discountPrice.toString();
     if (numStr.length === 3) {
       return parseInt(numStr.slice(0, 1) + "99");
     } else if (numStr.length === 4) {
