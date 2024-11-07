@@ -3,7 +3,7 @@ import { useAppDispatch } from "@/hooks/hooks";
 import { setTimerStatus } from "@/services/timer/reducer";
 import "./timer.css";
 
-export default function Timer() {
+export default function Timer(): React.JSX.Element {
   const dispatch = useAppDispatch();
   const [seconds, setSeconds] = useState(10);
 

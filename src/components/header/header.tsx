@@ -1,6 +1,6 @@
 import Timer from "@/components/timer/timer";
 
-export default function Header() {
+export default function Header(): React.JSX.Element {
   return (
     <div className="h-[80px] bg-white flex gap-[14px] items-center justify-center p-[6px]">
       <p className="font-pt-root-ui font-bold text-[30px] text-[#2D3242]">

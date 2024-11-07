@@ -6,7 +6,10 @@ type TypeCheckboxProps = {
   checked: boolean;
 };
 
-export default function Checkbox({ onClick, checked }: TypeCheckboxProps) {
+export default function Checkbox({
+  onClick,
+  checked,
+}: TypeCheckboxProps): React.JSX.Element {
   return (
     <div className="flex items-center space-x-2 gap-4">
       <input

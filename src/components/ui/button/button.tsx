@@ -10,7 +10,7 @@ export default function Button({
   onClick,
   disabled,
   size,
-}: TypeButtonProps) {
+}: TypeButtonProps): React.JSX.Element {
   return (
     <button
       type="submit"

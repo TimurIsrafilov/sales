@@ -20,7 +20,7 @@ export default function FinalPriceCard({
   id,
   cardData,
   choosenCard,
-}: TypeFinalPriceCardProps) {
+}: TypeFinalPriceCardProps): React.JSX.Element {
   const dispatch = useAppDispatch();
   const discountPrice = Math.round(price * (1 - cardData.discount / 100));
 

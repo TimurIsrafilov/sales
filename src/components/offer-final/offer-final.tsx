@@ -1,19 +1,10 @@
-import { useState } from "react";
-
-import FinalPriceCards from "@/components/final-price-cards/final-price-cards";
 import Button from "@/components/ui/button/button";
-import { TypeSalesData } from "@/types/types";
+import FinalPriceCards from "@/components/final-price-cards/final-price-cards";
 import { useAppSelector } from "@/hooks/hooks";
 import { getCard, getIsCardChosen } from "@/services/card/reducer";
-import { recomendationText, warningText } from "@/utils/textData";
 import { getSales } from "@/services/sales/reducer";
-import Link from "next/link";
 
-type TypePriceCardsProps = {
-  salesData: TypeSalesData | null;
-};
-
-export default function OfferFinal() {
+export default function OfferFinal(): React.JSX.Element {
   const salesData = useAppSelector(getSales);
 
   const titleFirstPart = "Не упусти свой";
@@ -25,17 +16,11 @@ export default function OfferFinal() {
 
   const warningText = "Посмотри, что мы для тебя приготовили 🔥";
 
-  const [checked, setChecked] = useState(false);
-
   const choosenCard = useAppSelector(getCard);
   const isCardChosen = useAppSelector(getIsCardChosen);
 
-  const handleCheckboxChange = () => {
-    setChecked(!checked);
-  };
-
   const handleButtonClick = () => {
-    console.log(choosenCard);
+    console.log("Выбран тариф по предложению:", choosenCard);
   };
 
   return (

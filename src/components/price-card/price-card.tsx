@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import { setCard } from "@/services/card/reducer";
 import SaleLabel from "@/components/sale-label/sale-label";
+import { setCard } from "@/services/card/reducer";
 import { getTimerStatus } from "@/services/timer/reducer";
 
 type TypeCardData = {
@@ -24,7 +24,7 @@ export default function PriceCard({
   cardData,
   type,
   choosenCard,
-}: TypePriceCardProps) {
+}: TypePriceCardProps): React.JSX.Element {
   const dispatch = useAppDispatch();
   const discountPrice = Math.round(price * (1 - cardData.discount / 100));
 
@@ -54,7 +54,7 @@ export default function PriceCard({
     >
       <div
         className={`${
-          type !== "vertical" ? "h-[125px]" : "h-[261px] container"
+          type !== "vertical" ? "sm:h-[125px] h-[261px]" : "h-[261px] container"
         } border-2 rounded-2xl
         ${
           choosenCard === id
@@ -71,7 +71,7 @@ export default function PriceCard({
         )}
         <div
           className={`flex gap-[16px] ${
-            type !== "vertical" ? "flex-row" : "flex-col"
+            type !== "vertical" ? "flex-col sm:flex-row" : "flex-col"
           }`}
         >
           <p

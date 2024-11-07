@@ -13,7 +13,9 @@ type TypePriceCardsProps = {
   salesData: TypeSalesData | null;
 };
 
-export default function Offer({ salesData }: TypePriceCardsProps) {
+export default function Offer({
+  salesData,
+}: TypePriceCardsProps): React.JSX.Element {
   const [checked, setChecked] = useState(false);
 
   const choosenCard = useAppSelector(getCard);
@@ -24,7 +26,7 @@ export default function Offer({ salesData }: TypePriceCardsProps) {
   };
 
   const handleButtonClick = () => {
-    console.log(choosenCard);
+    console.log("Выбран тариф по предложению:", choosenCard);
   };
 
   const disabled = checked && isCardChosen;

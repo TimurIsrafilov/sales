@@ -1,13 +1,12 @@
 import { useEffect } from "react";
 import Image from "next/image";
-import man from "@/components/sale/man.png";
-import PriceCards from "@/components/price-cards/price-cards";
+import man from "../../../public/man.png";
+import Offer from "@/components/offer/offer";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { getSales } from "@/services/sales/reducer";
 import { loadSales } from "@/services/sales/actions";
-import Offer from "../offer/offer";
 
-export default function Main() {
+export default function Main(): React.JSX.Element {
   const dispatch = useAppDispatch();
   const salesData = useAppSelector(getSales);
   const title = "Выберите подходящий тарифный план";
@@ -17,16 +16,15 @@ export default function Main() {
   }, [dispatch]);
 
   return (
-    <div className="bg-[rgb(246,247,247)]">
+    <div className="bg-[#f5f7f7]">
       <h2 className="font-rubik font-bold text-center text-[40px] text-[#2D3242]">
         {title.toUpperCase()}
       </h2>
-      <div className="container flex gap-[79px] mx-auto max-w-[1098px]">
+      <div className="container flex flex-col lg:flex-row xl:gap-[79px] justify-center items-center mx-auto max-w-[1098px]">
         <Image
           src={man}
           alt="man"
-          className="man"
-          style={{ height: "715px" }}
+          className="h-[441px] w-[277px] md:h-[715px] md:w-[434px]"
         />
         <Offer salesData={salesData} />
       </div>

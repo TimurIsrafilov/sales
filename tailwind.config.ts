@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        "bg-white": "#f5f7f7",
       },
       fontFamily: {
         "pt-root-ui": ['"PT Root UI"', "sans-serif"],

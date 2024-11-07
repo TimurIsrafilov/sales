@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import close from "@/components/popup/close.svg";
+import close from "../../../public/close.svg";
 
 interface TypePopupProps {
   isOpen: boolean;
