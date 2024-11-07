@@ -33,7 +33,7 @@ npm i
 запустить дев-режим
 
 ```bash
-npm npm run dev
+npm run dev
 ```
 
 Открыть [http://localhost:3000](http://localhost:3000)
