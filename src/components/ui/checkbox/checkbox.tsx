@@ -20,22 +20,22 @@ export default function Checkbox({
       />
       <div className="container flex flex-col">
         <div className="container flex">
-          <p className="font-pt-root-ui font-medium text-[16px] text-[#818798]">
+          <p className="font-pt-root-ui font-medium text-[16px] text-colr_light_gray">
             Я соглашаюсь с
           </p>
           <Link
             href="./"
-            className="font-pt-root-ui font-medium text-[16px] text-[#2D97F9] ml-[4px] mr-[4px]"
+            className="font-pt-root-ui font-medium text-[16px] text-colr_blue ml-[4px] mr-[4px]"
           >
             Правилами сервиса
           </Link>
-          <p className="font-pt-root-ui font-medium text-[16px] text-[#818798]">
+          <p className="font-pt-root-ui font-medium text-[16px] text-colr_light_gray">
             и условиями
           </p>
         </div>
         <Link
           href="./"
-          className="font-pt-root-ui font-medium text-[16px] text-[#2D97F9]"
+          className="font-pt-root-ui font-medium text-[16px] text-colr_blue"
         >
           Публичной оферты.
         </Link>

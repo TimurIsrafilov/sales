@@ -1,4 +1,4 @@
-import FinalPriceCard from "@/components/final-price-card/final-price-card";
+import FinalPriceCard from "@/components/layout/final-price-card/final-price-card";
 import { TypeSaleData, TypeSalesData } from "@/types/types";
 
 type TypePriceCardsProps = {

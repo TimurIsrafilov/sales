@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import PriceCards from "@/components/price-cards/price-cards";
+import PriceCards from "@/components/layout/price-cards/price-cards";
 import Checkbox from "@/components/ui/checkbox/checkbox";
 import Button from "@/components/ui/button/button";
 
@@ -34,12 +34,12 @@ export default function Offer({
   return (
     <div className="container flex gap-6 flex-col max-w-[584px]">
       <PriceCards salesData={salesData} choosenCard={choosenCard} />
-      <p className="font-pt-root-ui font-medium text-[16px] text-[#2D3242]">
+      <p className="font-pt-root-ui font-medium text-[16px] text-colr_gray">
         {recomendationText}
       </p>
       <Checkbox onClick={handleCheckboxChange} checked={checked} />
       <Button text="КУПИТЬ" onClick={handleButtonClick} disabled={disabled} />
-      <p className="font-pt-root-ui font-regular text-[14px] text-[#818798]">
+      <p className="font-pt-root-ui font-regular text-[14px] text-colr_light_gray">
         {warningText}
       </p>
     </div>

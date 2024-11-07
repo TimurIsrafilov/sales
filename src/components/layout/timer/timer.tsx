@@ -29,7 +29,7 @@ export default function Timer(): React.JSX.Element {
       className={`${
         seconds > 5 || seconds === 0 ? "" : "blink"
       } font-bebas font-regular text-[60px] leading-[0px] ${
-        seconds > 5 ? "text-[#01B9C5]" : "text-[#FD4D35] "
+        seconds > 5 ? "text-colr_aqua" : "text-colr_orange"
       }`}
     >
       {minutes < 10 ? `0${minutes}` : minutes}:

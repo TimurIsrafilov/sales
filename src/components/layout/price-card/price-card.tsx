@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import SaleLabel from "@/components/sale-label/sale-label";
+import SaleLabel from "@/components/layout/sale-label/sale-label";
 import { setCard } from "@/services/card/reducer";
 import { getTimerStatus } from "@/services/timer/reducer";
 
@@ -58,17 +58,20 @@ export default function PriceCard({
         } border-2 rounded-2xl
         ${
           choosenCard === id
-            ? "border-[#02bac5] bg-[#e9f4f4]"
+            ? "border-[#02bac5] bg-colr_white_gray"
             : "border-[#D3D6DD] bg-white"
         } p-[30px] relative`}
       >
         {!timerStatus ? (
-          <div className="top-[-30px] right-[5px] absolute">
+          <div className="top-[-30px] right-[5px] absolute transition-all duration-500 transform translate-x-0 opacity-100">
             <SaleLabel discount={cardData.discount} size={65} />
           </div>
         ) : (
-          ""
+          <div className="top-[-30px] right-[5px] absolute transition-all duration-500 transform translate-x-[50px] opacity-0">
+            <SaleLabel discount={cardData.discount} size={65} />
+          </div>
         )}
+
         <div
           className={`flex gap-[16px] ${
             type !== "vertical" ? "flex-col sm:flex-row" : "flex-col"
@@ -77,14 +80,14 @@ export default function PriceCard({
           <p
             className={`font-bebas font-medium ${
               type !== "vertical"
-                ? "text-[38px] text-[#2D3242]"
+                ? "text-[38px] text-colr_gray"
                 : "text-[30px] text-[#687078]"
             }`}
           >
             {name.toUpperCase()}
           </p>
           <div className="flex flex-col">
-            <p className="font-pt-root-ui font-bold text-[50px] text-[#2D3242] leading-[50px]">
+            <p className="font-pt-root-ui font-bold text-[50px] text-colr_gray leading-[50px]">
               {timerStatus ? `${price}₽` : `${replaceDigits(discountPrice)}₽`}
             </p>
             <p className="font-pt-root-ui font-medium line-through text-right text-[26px] text-[#95979F] leading-[26px] h-[16px]">

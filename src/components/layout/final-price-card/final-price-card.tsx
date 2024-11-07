@@ -1,6 +1,6 @@
 import { useAppDispatch } from "@/hooks/hooks";
 import { setCard } from "@/services/card/reducer";
-import SaleLabel from "@/components/sale-label/sale-label";
+import SaleLabel from "@/components/layout/sale-label/sale-label";
 
 type TypeCardData = {
   discount: number;
@@ -45,7 +45,7 @@ export default function FinalPriceCard({
         className={`h-[210px] w-[210px] container border-2 rounded-2xl
         ${
           choosenCard === id
-            ? "border-[#02bac5] bg-[#e9f4f4]"
+            ? "border-[#02bac5] bg-colr_white_gray"
             : "border-[#D3D6DD] bg-white"
         } p-[30px] relative`}
       >
@@ -59,7 +59,7 @@ export default function FinalPriceCard({
           </p>
 
           <div className="flex relative">
-            <p className="font-pt-root-ui font-bold text-[50px] text-[#2D3242] leading-[50px]">
+            <p className="font-pt-root-ui font-bold text-[50px] text-colr_gray leading-[50px]">
               {`${replaceDigits(discountPrice)}₽`}
             </p>
             <div className=" absolute top-[-20px] right-[-25px]">

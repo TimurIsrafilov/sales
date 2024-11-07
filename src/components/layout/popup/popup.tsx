@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import close from "../../../public/close.svg";
+import close from "@/public/close.svg";
 
 interface TypePopupProps {
   isOpen: boolean;
@@ -24,7 +24,7 @@ export default function Popup({
 
       <div
         className={`relative ${
-          onClose ? "bg-[#F5F7F7]" : ""
+          onClose ? "bg-colr_white" : ""
         } pr-[40px] pl-[40px] pb-[40px]`}
       >
         {onClose ? (

@@ -1,4 +1,4 @@
-import PriceCard from "@/components/price-card/price-card";
+import PriceCard from "@/components/layout/price-card/price-card";
 import { TypeSaleData, TypeSalesData } from "@/types/types";
 
 type TypePriceCardsProps = {
