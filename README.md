@@ -1,63 +1,62 @@
-# Приложение для отображения спец предложений компании
+# Application for displaying company's special offers
 
-## Описание проекта:
+## Project description:
 
-Web-приложение, при заходе в приложение появляется таймер и начинается обратный отсчет, указывающий на завершение акции. Дополнительно реализован всплывающий попап по спецпредложениям.
+Web application, while you enter the app a timer appears and a countdown begins, indicating the end of the promotion. Additionally a pop-up with special offers will be opened after countdown finish.
 
-## Проект размещен на ресурсе Vercel по ссылке:
+## The project is hosted on the Vercel resource at the link:
 
 [https://sales-kzhm.vercel.app/](https://sales-kzhm.vercel.app/)
 
-## Команды для сборки проекта:
+## Commands for building the project:
 
-склонировать реппозиторий
+clone the repository
 
 ```bash
 git clone https://github.com/TimurIsrafilov/sales.git
 ```
 
-зайти в папку проекта
+enter the project folder
 
 ```bash
 cd sales
 ```
 
-установить зависимости
+install dependencies
 
 ```bash
 npm i
 ```
 
-## Команды для запуска проекта:
+## Commands for running the project:
 
-запустить дев-режим
+run dev mode
 
 ```bash
 npm run dev
 ```
 
-Открыть [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000)
 
-запуск прод-режима
+run prod mode
 
 ```bash
 npm run build
 ```
 
-## Использован стек технологий:
+## Stack used technologies:
 
-- <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg" title="nextjs" alt="nextjs" width="20" height="20"/> - **NextJS** - фреймворк для React [https://nextjs.org/](https://nextjs.org/)
-- <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="reactjs" alt="reactjs" width="20" height="20"/> - **ReactJS** - библиотека JavaScript [https://react.dev/](https://react.dev/)
-- <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="redux" alt="redux" width="20" height="20"/> - **Redux** - стейт-менеджер для ReactJS [https://redux.js.org/](https://redux.js.org/)
-- <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="typescript" alt="typescript" width="20" height="20"/> - **TypeScript** - система статической типизации для JS [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original.svg" title="nextjs" alt="nextjs" width="20" height="20"/> - **NextJS** - framework for React [https://nextjs.org/](https://nextjs.org/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="reactjs" alt="reactjs" width="20" height="20"/> - **ReactJS** - JavaScript library [https://react.dev/](https://react.dev/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="redux" alt="redux" width="20" height="20"/> - **Redux** - state manager for ReactJS [https://redux.js.org/](https://redux.js.org/)
+- <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="typescript" alt="typescript" width="20" height="20"/> - **TypeScript** - static typing system for JS [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
-## Реализованный функционал:
+## Implemented functionality:
 
-- Проект привязан к получаемой с бэкенда информации о скидках.
-- Отображение первичных предложений с привязкой к таймеру.
-- Отображение спецпредложений во всплывающем окне.
+- The project is tied to the information received from the backend about discounts.
+- Display primary offers with a timer.
+- Display special offers in a pop-up window.
 
-## Что можно улучшить:
+## What can be improved:
 
-- Привести верстку в полное соответствие с макетом.
-- Рассмотреть возможность организации работы стейт менеджера на сервере.
+- Consider the possibility of organizing the work of the state manager on the server side.
